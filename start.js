@@ -11,11 +11,16 @@ const addItem = function (str) {
 }
 
 
-// document.querySelector('ul').appendChild(document.createElement('li'));
-// const printArray = function (arr) {
-//     document.
-// }
+document.querySelector('ul').appendChild(document.createElement('li'));
 
+const printArray = function (arr) {
+    let printThis = "";
+    for(let i = 0; i < todoList.length; i++){
+    printThis += "<br>"+todoList[i];
+    }   
+    return printThis; 
+}
+    document.querySelector('li').innerText = printArray();
 
 // li.innerText = 'results';
 // li.appendchild()
