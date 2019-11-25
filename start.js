@@ -5,12 +5,17 @@ const todoList = [
     'last thing on list', 
 ];
 const addItem = function (str) {
-    // let str = 'new item'
-    todoList.push(str);
+    let hi = 'new item'
+    todoList.push(hi);
     console.log(todoList)
 }
-const removeItem = function (str) {
-    // let str = 'new item'
-    todoList.pop(str);
-    console.log(todoList)
-}
+
+
+// document.querySelector('ul').appendChild(document.createElement('li'));
+// const printArray = function (arr) {
+//     document.
+// }
+
+
+// li.innerText = 'results';
+// li.appendchild()
