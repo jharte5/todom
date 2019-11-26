@@ -9,7 +9,7 @@ const addItem = function (str) {
     todoList.push(hi);
     console.log(todoList)
 }
-
+document.querySelector('.add-todo').addEventListener('click', addItem)
 
 document.querySelector('ul').appendChild(document.createElement('li'));
 
