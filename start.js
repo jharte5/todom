@@ -11,14 +11,14 @@ const addItem = function (str) {
 }
 document.querySelector('.add-todo').addEventListener('click', addItem)
 
-document.querySelector('ul').appendChild(document.createElement('li'));
 
 const printArray = function (arr) {
     let printThis = "";
     for(let i = 0; i < todoList.length; i++){
-    printThis += "<br>"+todoList[i];
-    }   
-    return printThis; 
+        printThis += todoList[i];
+        document.querySelector('ul').appendChild(document.createElement('li')).innerText = printThis
+}   
+return printThis; 
 }
     document.querySelector('li').innerText = printArray();
 
